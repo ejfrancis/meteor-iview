@@ -19,6 +19,7 @@ To update `iview` from npm:
 rm -rf iview
 git clone https://github.com/iview/iview iview
 rm -rf ./iview/.git
+rm -rf ./iview/examples
 cd ./iview
 npm i
 npm run dist:prod
