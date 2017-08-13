@@ -4,7 +4,7 @@ Package.describe({
   // Brief, one-line summary of the package.
   summary: 'A high quality UI Toolkit based on Vue.js',
   // URL to the Git repository containing the source code for this package.
-  git: 'https://github.com/ejfrancis/meteor-iview',
+  git: 'https://github.com/ejfrancis/meteor-iview.git',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
