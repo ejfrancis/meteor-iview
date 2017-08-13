@@ -29,8 +29,8 @@ git clone https://github.com/iview/iview iview
 rm -rf ./iview/.git
 rm -rf ./iview/examples
 cd ./iview
-# remove vue from iview/package.json peerDependencies
 npm i
+rm -rf ./node_modules/vue
 npm run dist:prod
 ```
 
