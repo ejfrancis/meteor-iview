@@ -9,7 +9,15 @@ meteor npm i -S vue     // install vue from npm
 meteor add efrancis:iview
 ```
 
-Then you can use iView components in your app.
+Then in your client startup code
+
+```js
+import Vue from 'vue';
+import iView from 'meteor/efrancis:iview';
+Vue.use(iView);
+```
+
+Now you can use iView components in your app.
 
 ### Build + Deploy
 

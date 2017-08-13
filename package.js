@@ -1,6 +1,6 @@
 Package.describe({
   name: 'efrancis:iview',
-  version: '0.0.8',
+  version: '0.0.9',
   // Brief, one-line summary of the package.
   summary: 'A high quality UI Toolkit based on Vue.js',
   // URL to the Git repository containing the source code for this package.
@@ -13,9 +13,8 @@ Package.describe({
 Package.onUse(function (api) {
   api.use('ecmascript@0.8.2', 'client');
   api.use('akryum:vue-component@0.10.5', 'client');
+  api.mainModule('./iview/src/index.js', 'client');
   api.addFiles([
-    // use .js from src/ because dist/ is built for webpack
-    'startup.js',
     // use css from dist/ so no need for less
     'iview/dist/styles/iview.css'
   ], 'client');
