@@ -12,7 +12,7 @@ Package.describe({
 
 Package.onUse(function (api) {
   api.use('ecmascript@0.8.2', 'client');
-  api.use('akryum:vue-component@0.10.15', 'client');
+  api.use('akryum:vue-component@0.10.5', 'client');
   api.addFiles([
     // use .js from src/ because dist/ is built for webpack
     'startup.js',
