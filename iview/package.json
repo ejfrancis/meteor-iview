@@ -1,45 +1,53 @@
 {
-  "_from": "iview",
-  "_id": "iview@2.0.0",
-  "_inBundle": false,
-  "_integrity": "sha512-IfGtgR3ik0GtbGtXIn5AojuIpEUaNWvubC6jYUmpc3WZE7eIOhI1olgg3hpo4Bfwub7K2mkR2XuUFD/xsz3Fsw==",
-  "_location": "/iview",
-  "_phantomChildren": {
-    "babel-runtime": "6.23.0"
-  },
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "iview",
-    "name": "iview",
-    "escapedName": "iview",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
+  "name": "iview",
+  "version": "2.0.0",
+  "title": "iView",
+  "description": "A high quality  UI components Library with Vue.js",
+  "homepage": "http://www.iviewui.com",
+  "keywords": [
+    "iview",
+    "vue",
+    "vue.js",
+    "component",
+    "components",
+    "ui",
+    "framework"
   ],
-  "_resolved": "https://registry.npmjs.org/iview/-/iview-2.0.0.tgz",
-  "_shasum": "80191df3e1ff31e80f4c7aedb10b96d828db0906",
-  "_spec": "iview",
-  "_where": "/home/evan/devel/meteor-vue-modular-app-starter",
-  "author": {
-    "name": "Aresn"
+  "main": "dist/iview.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "dev": "webpack-dev-server --content-base test/ --open --inline --hot --compress --history-api-fallback --port 8081 --config build/webpack.dev.config.js",
+    "dist:style": "gulp --gulpfile build/build-style.js",
+    "dist:dev": "webpack --config build/webpack.dist.dev.config.js",
+    "dist:prod": "webpack --config build/webpack.dist.prod.config.js",
+    "dist:locale": "webpack --config build/webpack.dist.locale.config.js",
+    "dist": "npm run dist:style && npm run dist:dev && npm run dist:prod && npm run dist:locale",
+    "lint": "eslint --fix --ext .js,.vue src",
+    "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
+    "test": "npm run lint && npm run unit",
+    "prepublish": "npm run dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iview/iview"
+  },
+  "author": "Aresn",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/iview/iview/issues"
   },
-  "bundleDependencies": false,
   "dependencies": {
     "async-validator": "^1.7.1",
     "core-js": "^2.4.1",
     "deepmerge": "^1.5.0",
     "popper.js": "^0.6.4"
   },
-  "deprecated": false,
-  "description": "A high quality  UI components Library with Vue.js",
+  "peerDependencies": {
+    "vue": "^2.4.1"
+  },
   "devDependencies": {
     "autoprefixer-loader": "^2.0.0",
     "babel": "^6.23.0",
@@ -95,43 +103,5 @@
   "engines": {
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"
-  },
-  "files": [
-    "dist",
-    "src"
-  ],
-  "homepage": "http://www.iviewui.com",
-  "keywords": [
-    "iview",
-    "vue",
-    "vue.js",
-    "component",
-    "components",
-    "ui",
-    "framework"
-  ],
-  "license": "MIT",
-  "main": "dist/iview.js",
-  "name": "iview",
-  "peerDependencies": {
-    "vue": "^2.4.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iview/iview.git"
-  },
-  "scripts": {
-    "dev": "webpack-dev-server --content-base test/ --open --inline --hot --compress --history-api-fallback --port 8081 --config build/webpack.dev.config.js",
-    "dist": "npm run dist:style && npm run dist:dev && npm run dist:prod && npm run dist:locale",
-    "dist:dev": "webpack --config build/webpack.dist.dev.config.js",
-    "dist:locale": "webpack --config build/webpack.dist.locale.config.js",
-    "dist:prod": "webpack --config build/webpack.dist.prod.config.js",
-    "dist:style": "gulp --gulpfile build/build-style.js",
-    "lint": "eslint --fix --ext .js,.vue src",
-    "prepublish": "npm run dist",
-    "test": "npm run lint && npm run unit",
-    "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run"
-  },
-  "title": "iView",
-  "version": "2.0.0"
+  }
 }
