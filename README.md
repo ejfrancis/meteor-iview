@@ -1,6 +1,6 @@
 # meteor-iview
 
-iView Vue.js UI toolkit for Meteor. Includes JS, CSS and fonts.
+[iView](https://www.iviewui.com/) Vue.js UI toolkit for Meteor. Includes JS, CSS and fonts.
 
 ## Installation
 
