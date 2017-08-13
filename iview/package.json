@@ -45,9 +45,6 @@
     "deepmerge": "^1.5.0",
     "popper.js": "^0.6.4"
   },
-  "peerDependencies": {
-    "vue": "^2.4.1"
-  },
   "devDependencies": {
     "autoprefixer-loader": "^2.0.0",
     "babel": "^6.23.0",
