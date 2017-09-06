@@ -1,20 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object'){
-        console.log('-----a');
-        module.exports = factory(require("vue"));
-    }
-	else if(typeof define === 'function' && define.amd){
-        console.log('-----b');
-        define("iview", ["vue"], factory);
-    }
-	else if(typeof exports === 'object'){
-        console.log('-----c');
-        exports["iview"] = factory(require("vue"));
-    }
-	else{
-        console.log('-----d');
-        root["iview"] = factory(root["Vue"]);
-    }
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("vue"));
+	else if(typeof define === 'function' && define.amd)
+		define("iview", ["vue"], factory);
+	else if(typeof exports === 'object')
+		exports["iview"] = factory(require("vue"));
+	else
+		root["iview"] = factory(root["Vue"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_11__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
