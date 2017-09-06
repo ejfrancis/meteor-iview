@@ -18,6 +18,7 @@ Package.onUse(function (api) {
     // use css from dist/ so no need for less
     'iview/dist/styles/iview.css'
   ], 'client');
+  // webpack couldn't find this for some reason, adding it as manual dep
   Npm.depends({
     tinycolor2: '1.4.1'
   });
