@@ -32,7 +32,6 @@
     </div>
 </template>
 <script>
-    import Vue from 'vue';
     import iInput from '../../components/input/input.vue';
     import Drop from '../../components/select/dropdown.vue';
     import clickoutside from '../../directives/clickoutside';
@@ -179,7 +178,7 @@
             },
             size: {
                 validator (value) {
-                    return oneOf(value, ['small', 'large']);
+                    return oneOf(value, ['small', 'large', 'default']);
                 }
             },
             placeholder: {
@@ -397,7 +396,7 @@
                     let isConfirm = this.confirm;
                     const type = this.type;
 
-                    this.picker = new Vue(this.panel).$mount(this.$refs.picker);
+                    this.picker = this.Panel.$mount(this.$refs.picker);
                     if (type === 'datetime' || type === 'datetimerange') {
                         isConfirm = true;
                         this.picker.showTime = true;
