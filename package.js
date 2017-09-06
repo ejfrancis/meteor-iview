@@ -18,6 +18,9 @@ Package.onUse(function (api) {
     // use css from dist/ so no need for less
     'iview/dist/styles/iview.css'
   ], 'client');
+  Npm.depends({
+    tinycolor2: '1.4.1'
+  });
   api.addAssets([
     'iview/dist/styles/fonts/ionicons.eot',
     'iview/dist/styles/fonts/ionicons.svg',
