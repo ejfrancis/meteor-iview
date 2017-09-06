@@ -13,7 +13,7 @@ Package.describe({
 Package.onUse(function (api) {
   api.use('ecmascript@0.8.2', 'client');
   api.use('akryum:vue-component@0.10.5', 'client');
-  api.mainModule('./iview/dist/index.js', 'client');
+  api.mainModule('./iview/dist/iview.js', 'client');
   api.addFiles([
     // use css from dist/ so no need for less
     'iview/dist/styles/iview.css'
