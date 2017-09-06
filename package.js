@@ -1,6 +1,6 @@
 Package.describe({
   name: 'efrancis:iview',
-  version: '0.0.11',
+  version: '0.0.12',
   // Brief, one-line summary of the package.
   summary: 'A high quality UI Toolkit based on Vue.js',
   // URL to the Git repository containing the source code for this package.
@@ -18,6 +18,7 @@ Package.onUse(function (api) {
     // use css from dist/ so no need for less
     'iview/dist/styles/iview.css'
   ], 'client');
+  // webpack couldn't find this for some reason, adding it as manual dep
   Npm.depends({
     tinycolor2: '1.4.1'
   });
