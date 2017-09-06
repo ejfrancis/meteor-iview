@@ -1,6 +1,6 @@
 Package.describe({
   name: 'efrancis:iview',
-  version: '0.0.11',
+  version: '0.0.12',
   // Brief, one-line summary of the package.
   summary: 'A high quality UI Toolkit based on Vue.js',
   // URL to the Git repository containing the source code for this package.
