@@ -35,6 +35,7 @@ rm -rf ./node_modules/vue
 # set src/local/index.js defaultLang to ./lang/en-US
 npm run dist:prod
 rm .babelrc
+rm -rf src/
 ```
 
 Then publish new version
