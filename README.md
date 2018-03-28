@@ -29,6 +29,7 @@ git clone https://github.com/iview/iview iview
 rm -rf ./iview/.git
 rm -rf ./iview/.github
 rm -rf ./iview/examples
+rm -rf ./iview/test
 cd ./iview
 npm i
 rm -rf ./node_modules/vue
