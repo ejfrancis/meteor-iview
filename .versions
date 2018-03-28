@@ -23,7 +23,7 @@ ecmascript@0.10.0
 ecmascript-runtime@0.5.0
 ecmascript-runtime-client@0.6.0
 ecmascript-runtime-server@0.5.0
-efrancis:iview@0.0.12
+efrancis:iview@0.0.13
 ejson@1.1.0
 geojson-utils@1.0.10
 html-tools@1.0.11
