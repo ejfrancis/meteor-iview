@@ -35,6 +35,8 @@ npm i
 rm -rf ./node_modules/vue
 # set src/local/index.js defaultLang to ./lang/en-US
 npm run dist:prod
+npm run dist:style
+npm run dist:locale
 rm .babelrc
 rm -rf src/
 ```
