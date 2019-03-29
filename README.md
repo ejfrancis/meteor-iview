@@ -1,6 +1,6 @@
 # meteor-iview
 
-[iView](https://www.iviewui.com/) 2.0 Vue.js UI toolkit for Meteor. Includes JS, CSS and fonts. Default language is set to `en-US` (`iView` from npm is set to `zh-CN` ).
+[iView](https://www.iviewui.com/) 2.0 Vue.js UI toolkit for Meteor. Includes JS, CSS and fonts. Default language is set to `en-US` (`iView` from npm is set to `zh-CN` ). Uses iview v2.14.3 (the last V2 release).
 
 ## Installation
 
